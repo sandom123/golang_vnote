@@ -64,13 +64,11 @@ vscode的相关go插件会出现无法下载情况，解决办法：
 # 1 在%GOPATH%\src\目录下，建立路径golang.org\x
 # 2 进入到%GOPATH%\src\golang.org\x，下载需要工具的源码git clone https://github.com/golang/tools.git
 # 3 进入到%GOPATH%下，执行
-    go install github.com/ramya-rao-a/go-outline
-    go install github.com/acroca/go-symbols
-    go install golang.org/x/tools/cmd/guru
-    go install golang.org/x/tools/cmd/gorename
-    go install github.com/rogpeppe/godef
-    go install github.com/sqs/goreturns
-    go install github.com/cweill/gotests/gotests
+    go get -u github.com/ramya-rao-a/go-outline
+    go get -u github.com/acroca/go-symbols
+    go get -u github.com/rogpeppe/godef
+    go get -u github.com/sqs/goreturns
+    go get -u github.com/cweill/gotests/gotests
 # 4 单独处理golint,进入 %GOPATH%\src\github.com\ 后执行：
      git clone https://github.com/golang/lint
     进入到%GOPATH%下，执行：
